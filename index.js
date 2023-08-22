@@ -18,12 +18,12 @@ app.get("/", (req,res) =>{
 app.use("/api", userRouter)
 app.use("/api",employeeRouter)
 
-app.listen(process.env.port, async ()=>{
+app.listen(8080, async ()=>{
     try{
         await connection
         console.log("Connected to DB")
     } catch(err){
         console.log(err.message)
     }
-    console.log(`Server is listening at port ${process.env.port}`)
+    console.log(`Server is listening at port 8080`)
 })
