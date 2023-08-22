@@ -12,7 +12,7 @@ const {employeeRouter} = require("./Routes/Employee.route")
 const {connection} = require("./db")
 
 app.get("/", (req,res) =>{
-    res.send("Welcome to Backend of Employee Management")
+    res.send("Welcome to Backend")
 })
 
 app.use("/api", userRouter)
